@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Matrículas abertas | Centro Educacional Thereza Tavares</title>
+<meta name="description" content="Matrículas abertas no Centro Educacional Thereza Tavares, em Vilar dos Teles, São João de Meriti - RJ. Ligue (21) 2656-4964.">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "School",
+  "name": "Centro Educacional Thereza Tavares",
+  "telephone": "+55-21-2656-4964",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "R. Padre Viêira, 83 - Lote 14 Qd 18, Vilar dos Teles",
+    "addressLocality": "São João de Meriti",
+    "addressRegion": "RJ",
+    "postalCode": "25560-030",
+    "addressCountry": "BR"
+  }
+}
+</script>
+
+<style>
+  :root {
+    --tinta:#1b2a41; --suave:#56627a; --fundo:#f4f7f5; --card:#ffffff; --linha:#dfe6e2;
+    --azul:#1f4fbf; --verde:#15803d; --verde-claro:#dcfce7; --verde-forte:#16a34a;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --tinta:#e8eef9; --suave:#9fabc2; --fundo:#0f1613; --card:#17211c; --linha:#263229;
+            --azul:#8fb0ff; --verde:#4ade80; --verde-claro:#12301d; --verde-forte:#22c55e; }
+  }
+  * { box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+  body { margin:0; font-family:system-ui,-apple-system,"Segoe UI",sans-serif; background:var(--fundo); color:var(--tinta); line-height:1.55; }
+  .wrap { max-width:1040px; margin:0 auto; padding:1.25rem; }
+  h1,h2,h3 { line-height:1.15; margin:0; }
+  section { margin-top:2.5rem; }
+  h2 { font-size:1.5rem; margin-bottom:1rem; }
+  :focus-visible { outline:3px solid var(--verde-forte); outline-offset:3px; }
+
+  /* Topo */
+  .hero { background:var(--card); border:1px solid var(--linha); border-radius:20px; padding:1.5rem; margin-top:1rem; }
+  .selo { display:inline-flex; align-items:center; gap:.5rem; background:var(--verde-claro); color:var(--verde); font-weight:700; padding:.4rem .9rem; border-radius:999px; font-size:.9rem; }
+  .ponto { width:.6rem; height:.6rem; border-radius:50%; background:var(--verde-forte); animation:pulsa 1.8s ease-in-out infinite; }
+  @keyframes pulsa { 50% { opacity:.3; } }
+  .hero h1 { font-size:clamp(1.8rem,5vw,2.8rem); margin:1rem 0 .6rem; }
+  .hero p { margin:0; color:var(--suave); max-width:60ch; }
+  .acoes { display:flex; flex-wrap:wrap; gap:.7rem; margin-top:1.4rem; }
+  .btn { display:inline-block; padding:.85rem 1.4rem; border-radius:999px; font-weight:700; text-decoration:none; border:2px solid var(--verde-forte); color:var(--verde); }
+  .btn.cheio { background:var(--verde-forte); color:#fff; }
+  .btn.cheio:hover { filter:brightness(1.08); }
+
+  /* Cards verdes */
+  .grade { display:grid; gap:1rem; }
+  @media (min-width:700px) { .grade.dois { grid-template-columns:1fr 1fr; } .grade.tres { grid-template-columns:repeat(3,1fr); } }
+  .card { background:var(--card); border:1px solid var(--linha); border-radius:16px; padding:1.25rem; }
+  .card h3 { font-size:1.1rem; margin-bottom:.6rem; }
+  .card.destaque { border-color:var(--verde-forte); border-width:2px; }
+  ul.checks { list-style:none; margin:0; padding:0; display:grid; gap:.5rem; }
+  ul.checks li { display:flex; gap:.6rem; align-items:flex-start; }
+  ul.checks li::before { content:"✓"; flex:none; width:1.3rem; height:1.3rem; border-radius:50%; background:var(--verde-forte); color:#fff; font-size:.8rem; font-weight:700; display:grid; place-items:center; margin-top:.15rem; }
+  .passo { display:flex; gap:.8rem; align-items:flex-start; }
+  .passo b { flex:none; width:2rem; height:2rem; border-radius:50%; background:var(--verde-claro); color:var(--verde); display:grid; place-items:center; }
+  .aviso { margin-top:1rem; font-size:.9rem; color:var(--suave); }
+
+  /* Galeria */
+  .galeria { display:grid; gap:.8rem; grid-template-columns:1fr 1fr; }
+  @media (min-width:700px) { .galeria { grid-template-columns:repeat(3,1fr); } }
+  .foto { margin:0; position:relative; border-radius:14px; overflow:hidden; aspect-ratio:4/3; background:var(--verde-claro); border:1px solid var(--linha); }
+  .foto img { width:100%; height:100%; object-fit:cover; display:block; cursor:zoom-in; }
+  .foto .vazio { height:100%; display:grid; place-content:center; justify-items:center; gap:.4rem; color:var(--verde); font-size:.85rem; text-align:center; padding:.5rem; }
+  .foto svg { width:2rem; height:2rem; }
+  .foto figcaption { position:absolute; left:0; right:0; bottom:0; padding:.4rem .7rem; font-size:.82rem; font-weight:600; color:#fff; background:linear-gradient(transparent,rgba(0,0,0,.65)); }
+  .foto .vazio + figcaption { color:var(--tinta); background:none; }
+  dialog { border:0; padding:0; background:transparent; max-width:92vw; }
+  dialog::backdrop { background:rgba(0,0,0,.8); }
+  dialog img { max-width:92vw; max-height:85vh; border-radius:12px; display:block; }
+
+  /* Local */
+  .local { display:grid; gap:1rem; }
+  @media (min-width:768px) { .local { grid-template-columns:1fr 1.2fr; } }
+  .mapa { border-radius:16px; overflow:hidden; border:1px solid var(--linha); min-height:300px; }
+  .mapa iframe { width:100%; height:100%; min-height:300px; border:0; display:block; }
+  address { font-style:normal; }
+  .tel { font-size:1.2rem; font-weight:700; color:var(--verde); text-decoration:none; }
+  footer { text-align:center; color:var(--suave); font-size:.85rem; padding:2rem 1rem; }
+
+  @media (prefers-reduced-motion: reduce) { .ponto { animation:none; } html { scroll-behavior:auto; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- Hero -->
+  <header class="hero">
+    <span class="selo"><span class="ponto"></span> Matrículas abertas <span id="ano-letivo"></span></span>
+    <h1>Centro Educacional Thereza Tavares</h1>
+    <p>Garanta a vaga do seu filho em Vilar dos Teles. Venha conhecer a escola e tire suas dúvidas com a nossa secretaria.</p>
+    <div class="acoes">
+      <a class="btn cheio" href="tel:+552126564964">Ligar e garantir a vaga</a>
+      <a class="btn" href="#fotos">Ver fotos da escola</a>
+      <a class="btn" href="#como-chegar">Como chegar</a>
+    </div>
+  </header>
+
+  <!-- Matrícula -->
+  <section id="matricula">
+    <h2>Como fazer a matrícula</h2>
+    <div class="grade tres">
+      <div class="card destaque">
+        <h3>Passo a passo</h3>
+        <div style="display:grid;gap:.8rem">
+          <div class="passo"><b>1</b><span>Ligue ou venha até a secretaria para consultar as vagas.</span></div>
+          <div class="passo"><b>2</b><span>Reúna os documentos do aluno e do responsável.</span></div>
+          <div class="passo"><b>3</b><span>Assine o contrato e confirme a matrícula.</span></div>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Documentos necessários</h3>
+        <ul class="checks" id="lista-docs"></ul>
+      </div>
+      <div class="card">
+        <h3>Por que escolher a escola</h3>
+        <ul class="checks" id="lista-dif"></ul>
+      </div>
+    </div>
+    <p class="aviso">Segmentos, turnos, valores e lista de documentos podem variar. Confirme tudo com a secretaria pelo telefone (21) 2656-4964.</p>
+  </section>
+
+  <!-- Fotos -->
+  <section id="fotos">
+    <h2>Conheça o espaço</h2>
+    <div class="galeria" id="galeria"></div>
+  </section>
+
+  <!-- Local -->
+  <section id="como-chegar">
+    <h2>Como chegar</h2>
+    <div class="local">
+      <div class="card">
+        <h3>Endereço</h3>
+        <address>
+          R. Padre Viêira, 83 - Lote 14 Qd 18<br>
+          Vilar dos Teles, São João de Meriti - RJ<br>
+          CEP 25560-030
+        </address>
+        <h3 style="margin-top:1.1rem">Telefone</h3>
+        <a class="tel" href="tel:+552126564964">(21) 2656-4964</a>
+        <div class="acoes">
+          <a id="btn-rota" class="btn cheio" target="_blank" rel="noopener" href="#">Traçar rota</a>
+        </div>
+      </div>
+      <div class="mapa">
+        <iframe id="mapa" title="Mapa do Centro Educacional Thereza Tavares" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+</div>
+
+<dialog id="zoom"><img alt=""></dialog>
+
+<footer>Centro Educacional Thereza Tavares · Vilar dos Teles, São João de Meriti - RJ</footer>
+
+<script>
+  // ================= EDITE AQUI =================
+  const ANO_LETIVO = 2027;
+
+  const DOCUMENTOS = [
+    'Certidão de nascimento do aluno',
+    'RG e CPF do responsável',
+    'Comprovante de residência',
+    'Histórico ou declaração de transferência (se vier de outra escola)',
+    'Carteira de vacinação',
+    '2 fotos 3x4'
+  ];
+
+  const DIFERENCIAIS = [
+    'Atendimento próximo às famílias',
+    'Localização em Vilar dos Teles',
+    'Equipe atenta ao desenvolvimento do aluno',
+    'Ambiente acolhedor e seguro'
+  ];
+
+  // Para usar fotos reais: coloque o caminho em "src" (ex.: 'fotos/fachada.jpg').
+  // Com src vazio, aparece um espaço reservado.
+  const FOTOS = [
+    { src: '', legenda: 'Fachada da escola' },
+    { src: '', legenda: 'Salas de aula' },
+    { src: '', legenda: 'Pátio e recreio' },
+    { src: '', legenda: 'Biblioteca' },
+    { src: '', legenda: 'Atividades dos alunos' },
+    { src: '', legenda: 'Secretaria' }
+  ];
+
+  const LOCAL = 'R. Padre Viêira, 83 - Lote 14 Qd 18 - Vilar dos Teles, São João de Meriti - RJ, 25560-030';
+  // ==============================================
+
+  document.getElementById('ano-letivo').textContent = ANO_LETIVO;
+
+  const li = t => `<li>${t}</li>`;
+  document.getElementById('lista-docs').innerHTML = DOCUMENTOS.map(li).join('');
+  document.getElementById('lista-dif').innerHTML = DIFERENCIAIS.map(li).join('');
+
+  const icone = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="11" r="2"/><path d="m21 16-5-5-8 8"/></svg>';
+  const galeria = document.getElementById('galeria');
+  galeria.innerHTML = FOTOS.map((f, i) => f.src
+    ? `<figure class="foto"><img src="${f.src}" alt="${f.legenda}" loading="lazy" data-i="${i}"><figcaption>${f.legenda}</figcaption></figure>`
+    : `<figure class="foto"><div class="vazio" role="img" aria-label="Espaço para foto: ${f.legenda}">${icone}<span>Foto em breve</span></div><figcaption>${f.legenda}</figcaption></figure>`
+  ).join('');
+
+  const zoom = document.getElementById('zoom');
+  galeria.addEventListener('click', e => {
+    const img = e.target.closest('img');
+    if (!img) return;
+    zoom.querySelector('img').src = img.src;
+    zoom.querySelector('img').alt = img.alt;
+    zoom.showModal();
+  });
+  zoom.addEventListener('click', () => zoom.close());
+
+  const q = encodeURIComponent(LOCAL);
+  document.getElementById('mapa').src = `https://www.google.com/maps?q=${q}&output=embed`;
+  document.getElementById('btn-rota').href = `https://www.google.com/maps/dir/?api=1&destination=${q}`;
+</script>
+</body>
+</html>
